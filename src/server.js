@@ -5,7 +5,7 @@ const app = express();
 app.post('/create-document', (request , response) =>  {
 
     const teste = [
-        {id:'1' ,array: 'meu pai', motivo: 'como ele retorna zero'}
+        {array: 'meu pai', motivo: 'como ele retorna zero'}
         ]
     //return response.send('funcionou');
     return response.json(teste);
