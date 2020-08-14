@@ -2,13 +2,21 @@ const express = require('express');
 
 const app = express();
 
-app.post('/teste', (request , response) =>  {
+app.post('/create-document', (request , response) =>  {
 
     const teste = [
-        {array: 'meu pai', motivo: 'como ele retorna zero'}
+        {id:'1' ,array: 'meu pai', motivo: 'como ele retorna zero'}
         ]
     //return response.send('funcionou');
     return response.json(teste);
+  
+});
+
+app.delete('/delete-document', (request , response) =>  {
+    //return response.send('funcionou');
+  
+
+    return response.send("Deletado com Sucesso");
   
 });
 
