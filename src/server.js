@@ -20,5 +20,37 @@ app.delete('/delete-document', (request , response) =>  {
   
 });
 
+app.get('/list-document', (request , response) =>  {
+    //return response.send('funcionou');
+  
+
+    return response.send("Listado com Sucesso");
+  
+});
+
+app.post('/create-user', (request , response) =>  {
+    //return response.send('funcionou');
+  
+
+    return response.send("Usuário criado com sucesso");
+  
+});
+
+app.delete('/delete-user', (request , response) =>  {
+    //return response.send('funcionou');
+  
+
+    return response.send("Usuário deletado com sucesso");
+  
+});
+
+app.get('/list-user', (request , response) =>  {
+    //return response.send('funcionou');
+  
+
+    return response.send("Usuário listado com sucesso");
+  
+});
+
 
 app.listen(3333, () => console.log('Server Ligado.'));
